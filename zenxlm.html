@@ -8,11 +8,11 @@
 
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;background:#fff;color:#1a1030}
-:root{--p:#9d00ff;--pd:#7a00cc;--pm:#b032ff;--m:#ff39ff;--mp:#ff8fff;
---dk:#0e0a1a;--dp:#1a1030;--wh:#ffffff;--lt:#f8f5ff;
+:root{--p:#9d00ff;--pd:#7a00cc;--pm:#b032ff;--m:#9d00ff;--mp:#b032ff;
+--dk:#0d0626;--dp:#1a1030;--wh:#ffffff;--lt:#f8f5ff;
 --tm:#5a5070;--tl:#9990aa;--br:#e8e0f0;
---g:linear-gradient(135deg,#9d00ff 0%,#ff39ff 100%);
---gd:linear-gradient(170deg,#0e0a1a 0%,#1a1030 100%)}
+--g:linear-gradient(135deg,#7a00cc 0%,#9d00ff 100%);
+--gd:linear-gradient(170deg,#0d0626 0%,#1a1030 100%)}
 nav{position:fixed;top:38px;z-index:100;left:0;right:0;z-index:100;background:rgba(14,10,26,.96);backdrop-filter:blur(16px);border-bottom:1px solid rgba(157,0,255,.1);height:64px;display:flex;align-items:center}
 .ni{max-width:1140px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;width:100%}
 .logo{cursor:pointer}
@@ -20,7 +20,7 @@ nav{position:fixed;top:38px;z-index:100;left:0;right:0;z-index:100;background:rg
 .nl{display:flex;align-items:center;gap:24px}
 .nd{position:relative}
 .na{font-size:13px;font-weight:500;color:rgba(255,255,255,.8);cursor:pointer;border:none;background:none;font-family:inherit;padding:4px 0;transition:color .2s}
-.na:hover{color:#ff8fff}
+.na:hover{color:#b032ff}
 .dm{position:absolute;top:40px;left:-8px;background:#fff;border-radius:12px;box-shadow:0 8px 32px rgba(157,0,255,.15);min-width:230px;border:1px solid var(--br);display:none;z-index:9999;overflow:hidden}
 .dm.open{display:block}
 .di{padding:11px 16px;font-size:13px;color:#1a1030;cursor:pointer;border-bottom:1px solid var(--br);display:flex;align-items:center;gap:9px;transition:background .15s}
@@ -201,7 +201,7 @@ footer{background:var(--dk);padding:40px 0 18px;border-top:1px solid rgba(157,0,
 .pr-card p{font-size:12.5px;color:var(--tm);line-height:1.8}
 
 /* ── TICKER BAR ── */
-.ticker-bar{background:linear-gradient(90deg,#0e0a1a 0%,#1a0a2e 50%,#0e0a1a 100%);border-bottom:1px solid rgba(157,0,255,.2);height:38px;overflow:hidden;position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center}
+.ticker-bar{background:linear-gradient(90deg,#0d0626 0%,#1a0a2e 50%,#0d0626 100%);border-bottom:1px solid rgba(157,0,255,.2);height:38px;overflow:hidden;position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center}
 .ticker-track{display:flex;align-items:center;white-space:nowrap;animation:ticker 36s linear infinite;gap:0}
 .ticker-track:hover{animation-play-state:paused}
 @keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
@@ -211,13 +211,13 @@ footer{background:var(--dk);padding:40px 0 18px;border-top:1px solid rgba(157,0,
 .ticker-label{font-weight:700;margin-right:3px}
 /* ── HERO CYCLING TEXT ── */
 .hero-cycle{display:inline-block;position:relative;min-height:1.25em;vertical-align:bottom}
-.hero-cycle span{position:absolute;left:0;top:0;opacity:0;transform:translateY(16px);transition:all .5s ease;white-space:nowrap;background:linear-gradient(135deg,#9d00ff 0%,#ff39ff 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-weight:700}
+.hero-cycle span{position:absolute;left:0;top:0;opacity:0;transform:translateY(16px);transition:all .5s ease;white-space:nowrap;background:linear-gradient(135deg,#7a00cc 0%,#9d00ff 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-weight:700}
 .hero-cycle span.visible{opacity:1;transform:translateY(0)}
 /* Push content below fixed ticker+nav */
 
 
 .na{text-decoration:none;font-size:13px;font-weight:500;color:rgba(255,255,255,.8);cursor:pointer;border:none;background:none;font-family:inherit;padding:4px 0;transition:color .2s;display:inline-block}
-.na:hover,.na-active{color:#ff8fff!important}
+.na:hover,.na-active{color:#b032ff!important}
 .di{text-decoration:none;color:#1a1030;display:flex;align-items:center;gap:9px}
 .dm{position:absolute;top:48px;left:-8px;background:#fff;border-radius:12px;box-shadow:0 8px 32px rgba(157,0,255,.2);min-width:240px;border:1px solid #e8e0f0;display:none;z-index:9999;overflow:hidden}
 .dm.open{display:block}
@@ -230,20 +230,20 @@ footer{background:var(--dk);padding:40px 0 18px;border-top:1px solid rgba(157,0,
     <div class="ticker-item" onclick="location.href='zensignal.html'"><span class="ticker-dot" style="background:#9d00ff"></span><span class="ticker-label">ZenSignal</span> — Surface high-intent B2B accounts before your competitors do</div>
     <div class="ticker-item" onclick="location.href='zensuccess.html'"><span class="ticker-dot" style="background:#7a00cc"></span><span class="ticker-label">ZenSuccess</span> — Predict B2B customer churn 30–60 days before it happens</div>
     <div class="ticker-item" onclick="location.href='zenxlm.html'"><span class="ticker-dot" style="background:#b032ff"></span><span class="ticker-label">ZenXLM</span> — Orchestrate B2C lifecycle experiences from first touch to advocacy</div>
-    <div class="ticker-item" onclick="location.href='zenconsult.html'"><span class="ticker-dot" style="background:#ff39ff"></span><span class="ticker-label">ZenConsult</span> — Forward-deployed AI modernisation for the enterprise</div>
+    <div class="ticker-item" onclick="location.href='zenconsult.html'"><span class="ticker-dot" style="background:#9d00ff"></span><span class="ticker-label">ZenConsult</span> — Forward-deployed AI modernisation for the enterprise</div>
     <div class="ticker-item" onclick="location.href='zensignal.html'"><span class="ticker-dot" style="background:#9d00ff"></span><span class="ticker-label">ZenSignal</span> — 3× pipeline quality from AI-ranked accounts vs undifferentiated lists</div>
     <div class="ticker-item" onclick="location.href='zensuccess.html'"><span class="ticker-dot" style="background:#7a00cc"></span><span class="ticker-label">ZenSuccess</span> — 6.2× expansion lift from signal-led upsell and cross-sell plays</div>
     <div class="ticker-item" onclick="location.href='zenxlm.html'"><span class="ticker-dot" style="background:#b032ff"></span><span class="ticker-label">ZenXLM</span> — 35% LTV uplift through personalised, behaviour-triggered experiences</div>
-    <div class="ticker-item" onclick="location.href='zenconsult.html'"><span class="ticker-dot" style="background:#ff39ff"></span><span class="ticker-label">ZenConsult</span> — Assess → Architect → Build → Deploy → Govern. Outcome-based delivery.</div>
+    <div class="ticker-item" onclick="location.href='zenconsult.html'"><span class="ticker-dot" style="background:#9d00ff"></span><span class="ticker-label">ZenConsult</span> — Assess → Architect → Build → Deploy → Govern. Outcome-based delivery.</div>
     <!-- Duplicate for seamless loop -->
     <div class="ticker-item" onclick="location.href='zensignal.html'"><span class="ticker-dot" style="background:#9d00ff"></span><span class="ticker-label">ZenSignal</span> — Surface high-intent B2B accounts before your competitors do</div>
     <div class="ticker-item" onclick="location.href='zensuccess.html'"><span class="ticker-dot" style="background:#7a00cc"></span><span class="ticker-label">ZenSuccess</span> — Predict B2B customer churn 30–60 days before it happens</div>
     <div class="ticker-item" onclick="location.href='zenxlm.html'"><span class="ticker-dot" style="background:#b032ff"></span><span class="ticker-label">ZenXLM</span> — Orchestrate B2C lifecycle experiences from first touch to advocacy</div>
-    <div class="ticker-item" onclick="location.href='zenconsult.html'"><span class="ticker-dot" style="background:#ff39ff"></span><span class="ticker-label">ZenConsult</span> — Forward-deployed AI modernisation for the enterprise</div>
+    <div class="ticker-item" onclick="location.href='zenconsult.html'"><span class="ticker-dot" style="background:#9d00ff"></span><span class="ticker-label">ZenConsult</span> — Forward-deployed AI modernisation for the enterprise</div>
     <div class="ticker-item" onclick="location.href='zensignal.html'"><span class="ticker-dot" style="background:#9d00ff"></span><span class="ticker-label">ZenSignal</span> — 3× pipeline quality from AI-ranked accounts vs undifferentiated lists</div>
     <div class="ticker-item" onclick="location.href='zensuccess.html'"><span class="ticker-dot" style="background:#7a00cc"></span><span class="ticker-label">ZenSuccess</span> — 6.2× expansion lift from signal-led upsell and cross-sell plays</div>
     <div class="ticker-item" onclick="location.href='zenxlm.html'"><span class="ticker-dot" style="background:#b032ff"></span><span class="ticker-label">ZenXLM</span> — 35% LTV uplift through personalised, behaviour-triggered experiences</div>
-    <div class="ticker-item" onclick="location.href='zenconsult.html'"><span class="ticker-dot" style="background:#ff39ff"></span><span class="ticker-label">ZenConsult</span> — Assess → Architect → Build → Deploy → Govern. Outcome-based delivery.</div>
+    <div class="ticker-item" onclick="location.href='zenconsult.html'"><span class="ticker-dot" style="background:#9d00ff"></span><span class="ticker-label">ZenConsult</span> — Assess → Architect → Build → Deploy → Govern. Outcome-based delivery.</div>
   </div>
 </div>
 <nav>
@@ -257,7 +257,7 @@ footer{background:var(--dk);padding:40px 0 18px;border-top:1px solid rgba(157,0,
     <a class="di" href="zensignal.html"><span class="dd" style="background:#9d00ff"></span>ZenSignal — B2B Sales Intelligence</a>
     <a class="di" href="zensuccess.html"><span class="dd" style="background:#7a00cc"></span>ZenSuccess — B2B Customer Success</a>
     <a class="di" href="zenxlm.html"><span class="dd" style="background:#b032ff"></span>ZenXLM — B2C Lifecycle Marketing</a>
-    <a class="di" href="zenconsult.html"><span class="dd" style="background:#ff39ff"></span>ZenConsult — AI Modernization</a>
+    <a class="di" href="zenconsult.html"><span class="dd" style="background:#9d00ff"></span>ZenConsult — AI Modernization</a>
   </div>
 </div>
 <div class="nd"><a class="na" href="about.html">About Us</a></div>
@@ -278,7 +278,7 @@ footer{background:var(--dk);padding:40px 0 18px;border-top:1px solid rgba(157,0,
 <!-- Left -->
 <div>
   <div style="font-size:11px;font-weight:700;color:rgba(176,50,255,.65);letter-spacing:.12em;text-transform:uppercase;margin-bottom:12px">01 · ZenXLM</div>
-  <div style="display:inline-block;padding:5px 16px;background:rgba(176,50,255,.15);border-radius:20px;border:1px solid rgba(176,50,255,.25);font-size:11px;font-weight:600;color:#ff8fff;letter-spacing:.08em;text-transform:uppercase;margin-bottom:20px">B2C Experience &amp; Lifecycle Marketing</div>
+  <div style="display:inline-block;padding:5px 16px;background:rgba(176,50,255,.15);border-radius:20px;border:1px solid rgba(176,50,255,.25);font-size:11px;font-weight:600;color:#b032ff;letter-spacing:.08em;text-transform:uppercase;margin-bottom:20px">B2C Experience &amp; Lifecycle Marketing</div>
   <h1 style="font-size:42px;margin-bottom:10px">ZenXLM</h1>
   <p style="font-size:18px;color:rgba(255,255,255,.8);font-style:italic;margin-bottom:14px;font-weight:400;line-height:1.4">Every customer is an individual. Treat them like one.</p>
   <p style="font-size:14px;color:rgba(255,255,255,.6);line-height:1.8;margin-bottom:22px">An Agentic AI lifecycle marketing platform that builds a real-time Customer DNA profile for every individual — and uses it to orchestrate the next best experience across every channel, every touchpoint, every stage of the journey. Not segments. Not campaigns. Individuals, in real time.</p>
@@ -290,7 +290,7 @@ footer{background:var(--dk);padding:40px 0 18px;border-top:1px solid rgba(157,0,
 </div>
 
 <!-- Right: ZenXLM Journey Intelligence Dashboard -->
-<div style="background:#0e0a1a;border-radius:16px;border:1px solid rgba(176,50,255,.25);overflow:hidden;box-shadow:0 0 48px rgba(176,50,255,.12)">
+<div style="background:var(--gd);border-radius:16px;border:1px solid rgba(176,50,255,.25);overflow:hidden;box-shadow:0 0 48px rgba(176,50,255,.12)">
   <div style="padding:12px 16px;border-bottom:1px solid rgba(176,50,255,.15);display:flex;align-items:center;justify-content:space-between">
     <span style="font-size:11px;font-weight:700;color:rgba(255,255,255,.55);letter-spacing:.06em;text-transform:uppercase">ZenXLM Journey Intelligence</span>
     <div style="display:flex;align-items:center;gap:8px">
@@ -301,7 +301,7 @@ footer{background:var(--dk);padding:40px 0 18px;border-top:1px solid rgba(157,0,
   <!-- Stats -->
   <div style="display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid rgba(176,50,255,.1)">
     <div style="padding:12px 10px;border-right:1px solid rgba(176,50,255,.08);text-align:center">
-      <div style="font-size:19px;font-weight:700;background:linear-gradient(135deg,#b032ff,#ff39ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent">2.4M</div>
+      <div style="font-size:19px;font-weight:700;background:linear-gradient(135deg,#7a00cc,#9d00ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent">2.4M</div>
       <div style="font-size:8.5px;color:rgba(255,255,255,.4);margin-top:2px;line-height:1.3">active profiles</div>
     </div>
     <div style="padding:12px 10px;border-right:1px solid rgba(176,50,255,.08);text-align:center">
@@ -309,11 +309,11 @@ footer{background:var(--dk);padding:40px 0 18px;border-top:1px solid rgba(157,0,
       <div style="font-size:8.5px;color:rgba(255,255,255,.4);margin-top:2px;line-height:1.3">AI decisions/hr</div>
     </div>
     <div style="padding:12px 10px;border-right:1px solid rgba(176,50,255,.08);text-align:center">
-      <div style="font-size:19px;font-weight:700;background:linear-gradient(135deg,#b032ff,#ff39ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent">4.2×</div>
+      <div style="font-size:19px;font-weight:700;background:linear-gradient(135deg,#7a00cc,#9d00ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent">4.2×</div>
       <div style="font-size:8.5px;color:rgba(255,255,255,.4);margin-top:2px;line-height:1.3">conversion lift</div>
     </div>
     <div style="padding:12px 10px;text-align:center">
-      <div style="font-size:19px;font-weight:700;background:linear-gradient(135deg,#b032ff,#ff39ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent">+31</div>
+      <div style="font-size:19px;font-weight:700;background:linear-gradient(135deg,#7a00cc,#9d00ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent">+31</div>
       <div style="font-size:8.5px;color:rgba(255,255,255,.4);margin-top:2px;line-height:1.3">NPS points avg.</div>
     </div>
   </div>
@@ -630,7 +630,7 @@ footer{background:var(--dk);padding:40px 0 18px;border-top:1px solid rgba(157,0,
     </div>
   </div>
   <div style="text-align:right;flex-shrink:0;min-width:100px">
-    <div style="font-size:20px;font-weight:700;background:linear-gradient(135deg,#b032ff,#ff39ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1.1;margin-bottom:4px">Individual</div>
+    <div style="font-size:20px;font-weight:700;background:linear-gradient(135deg,#7a00cc,#9d00ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1.1;margin-bottom:4px">Individual</div>
     <div style="font-size:9px;color:var(--tl);line-height:1.4">not a segment</div>
   </div>
 </div>
@@ -648,14 +648,14 @@ footer{background:var(--dk);padding:40px 0 18px;border-top:1px solid rgba(157,0,
     </div>
   </div>
   <div style="text-align:right;flex-shrink:0;min-width:100px">
-    <div style="font-size:20px;font-weight:700;background:linear-gradient(135deg,#b032ff,#ff39ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1.1;margin-bottom:4px">Real-time</div>
+    <div style="font-size:20px;font-weight:700;background:linear-gradient(135deg,#7a00cc,#9d00ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1.1;margin-bottom:4px">Real-time</div>
     <div style="font-size:9px;color:var(--tl);line-height:1.4">not nightly batches</div>
   </div>
 </div>
 
 <div style="background:#fff;border-radius:14px;padding:22px;border:2px solid rgba(176,50,255,.35);display:flex;gap:16px;align-items:flex-start;position:relative;overflow:hidden">
-  <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(135deg,#b032ff,#ff39ff)"></div>
-  <div style="width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,#b032ff,#ff39ff);color:#fff;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0">03</div>
+  <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(135deg,#7a00cc,#9d00ff)"></div>
+  <div style="width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,#7a00cc,#9d00ff);color:#fff;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0">03</div>
   <div style="flex:1">
     <div style="font-size:9px;font-weight:700;color:rgba(176,50,255,.9);text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px">Journey Orchestration Engine</div>
     <div style="font-size:15px;font-weight:700;color:#1a1030;margin-bottom:5px">Right experience. Right channel. Right moment. Every time.</div>
@@ -667,7 +667,7 @@ footer{background:var(--dk);padding:40px 0 18px;border-top:1px solid rgba(157,0,
     </div>
   </div>
   <div style="text-align:right;flex-shrink:0;min-width:100px">
-    <div style="font-size:20px;font-weight:700;background:linear-gradient(135deg,#b032ff,#ff39ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1.1;margin-bottom:4px">4.2×</div>
+    <div style="font-size:20px;font-weight:700;background:linear-gradient(135deg,#7a00cc,#9d00ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1.1;margin-bottom:4px">4.2×</div>
     <div style="font-size:9px;color:var(--tl);line-height:1.4">conversion lift</div>
   </div>
 </div>
@@ -685,7 +685,7 @@ footer{background:var(--dk);padding:40px 0 18px;border-top:1px solid rgba(157,0,
     </div>
   </div>
   <div style="text-align:right;flex-shrink:0;min-width:100px">
-    <div style="font-size:20px;font-weight:700;background:linear-gradient(135deg,#b032ff,#ff39ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1.1;margin-bottom:4px">28%</div>
+    <div style="font-size:20px;font-weight:700;background:linear-gradient(135deg,#7a00cc,#9d00ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1.1;margin-bottom:4px">28%</div>
     <div style="font-size:9px;color:var(--tl);line-height:1.4">churn reduction</div>
   </div>
 </div>
@@ -703,7 +703,7 @@ footer{background:var(--dk);padding:40px 0 18px;border-top:1px solid rgba(157,0,
     </div>
   </div>
   <div style="text-align:right;flex-shrink:0;min-width:100px">
-    <div style="font-size:20px;font-weight:700;background:linear-gradient(135deg,#b032ff,#ff39ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1.1;margin-bottom:4px">+18pts</div>
+    <div style="font-size:20px;font-weight:700;background:linear-gradient(135deg,#7a00cc,#9d00ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1.1;margin-bottom:4px">+18pts</div>
     <div style="font-size:9px;color:var(--tl);line-height:1.4">NPS improvement</div>
   </div>
 </div>
@@ -737,7 +737,7 @@ footer{background:var(--dk);padding:40px 0 18px;border-top:1px solid rgba(157,0,
       <div style="display:flex;gap:10px;align-items:flex-start"><span style="color:#b032ff;font-size:15px;flex-shrink:0;line-height:1.2">✓</span><div style="font-size:12.5px;color:rgba(255,255,255,.65);line-height:1.5"><strong style="color:#fff">Relationship-building</strong> — the act of sharing creates psychological commitment and higher loyalty</div></div>
       <div style="display:flex;gap:10px;align-items:flex-start"><span style="color:#b032ff;font-size:15px;flex-shrink:0;line-height:1.2">✓</span><div style="font-size:12.5px;color:rgba(255,255,255,.65);line-height:1.5"><strong style="color:#fff">Immediately actionable</strong> — ZenXLM activates it in real time across all channels and journey stages</div></div>
       <div style="margin-top:8px;background:rgba(176,50,255,.12);border-radius:8px;padding:12px 14px;border:1px solid rgba(176,50,255,.2);text-align:center">
-        <div style="font-size:22px;font-weight:700;background:linear-gradient(135deg,#b032ff,#ff39ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent">3–5×</div>
+        <div style="font-size:22px;font-weight:700;background:linear-gradient(135deg,#7a00cc,#9d00ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent">3–5×</div>
         <div style="font-size:11px;color:rgba(255,255,255,.55);margin-top:3px">higher conversion rate from customers who share zero-party data</div>
       </div>
     </div>
@@ -768,7 +768,7 @@ footer{background:var(--dk);padding:40px 0 18px;border-top:1px solid rgba(157,0,
     <div style="font-size:9px;font-weight:700;color:#b032ff;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px">With ZenXLM</div>
     <p style="font-size:12.5px;color:var(--tm);line-height:1.6">Individual-level LTV trajectories in real time. Churn detected 30–60 days early. Revenue from personalised upsell automatically attributed. One dashboard that shows the true business impact of CX.</p>
   </div>
-  <div style="padding:10px 18px;background:linear-gradient(135deg,#b032ff,#ff39ff);font-size:11px;font-weight:600;color:#fff">35% LTV uplift · 28% churn reduction</div>
+  <div style="padding:10px 18px;background:linear-gradient(135deg,#7a00cc,#9d00ff);font-size:11px;font-weight:600;color:#fff">35% LTV uplift · 28% churn reduction</div>
 </div>
 
 <div style="background:#fff;border-radius:14px;overflow:hidden;border:1px solid var(--br)">
@@ -784,7 +784,7 @@ footer{background:var(--dk);padding:40px 0 18px;border-top:1px solid rgba(157,0,
     <div style="font-size:9px;font-weight:700;color:#b032ff;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px">With ZenXLM</div>
     <p style="font-size:12.5px;color:var(--tm);line-height:1.6">The AI detects re-engagement signals and triggers personalised recovery journeys before the lapse becomes a loss. Every re-engagement message is individual — channel, timing, offer, and message tone all chosen by the AI based on the customer's DNA profile.</p>
   </div>
-  <div style="padding:10px 18px;background:linear-gradient(135deg,#b032ff,#ff39ff);font-size:11px;font-weight:600;color:#fff">4× conversion lift on triggered vs batch sends</div>
+  <div style="padding:10px 18px;background:linear-gradient(135deg,#7a00cc,#9d00ff);font-size:11px;font-weight:600;color:#fff">4× conversion lift on triggered vs batch sends</div>
 </div>
 
 <div style="background:#fff;border-radius:14px;overflow:hidden;border:1px solid var(--br)">
@@ -800,7 +800,7 @@ footer{background:var(--dk);padding:40px 0 18px;border-top:1px solid rgba(157,0,
     <div style="font-size:9px;font-weight:700;color:#b032ff;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px">With ZenXLM</div>
     <p style="font-size:12.5px;color:var(--tm);line-height:1.6">A unified customer intelligence graph shows the complete journey — from first touch to purchase — in one view, across every channel. The AI selects the lowest-friction path for each individual. Abandon recovery is triggered automatically, at the right moment, on the right channel.</p>
   </div>
-  <div style="padding:10px 18px;background:linear-gradient(135deg,#b032ff,#ff39ff);font-size:11px;font-weight:600;color:#fff">Unified attribution · AI-optimised abandon recovery</div>
+  <div style="padding:10px 18px;background:linear-gradient(135deg,#7a00cc,#9d00ff);font-size:11px;font-weight:600;color:#fff">Unified attribution · AI-optimised abandon recovery</div>
 </div>
 
 </div>
@@ -815,22 +815,22 @@ footer{background:var(--dk);padding:40px 0 18px;border-top:1px solid rgba(157,0,
 <p class="ss ssl">Measurable impact across the full B2C customer lifecycle — from first conversion to lifetime advocacy.</p>
 <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px">
   <div style="text-align:center;padding:24px;background:rgba(255,255,255,.04);border-radius:14px;border:1px solid rgba(176,50,255,.15)">
-    <div style="font-size:28px;font-weight:700;background:linear-gradient(135deg,#b032ff,#ff39ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:5px">35%</div>
+    <div style="font-size:28px;font-weight:700;background:linear-gradient(135deg,#7a00cc,#9d00ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:5px">35%</div>
     <div style="font-size:13px;font-weight:600;color:#fff;margin-bottom:6px">LTV Uplift</div>
     <div style="font-size:12px;color:rgba(255,255,255,.5);line-height:1.5">Customer lifetime value increase through personalised re-engagement and proactive lifecycle intervention</div>
   </div>
   <div style="text-align:center;padding:24px;background:rgba(255,255,255,.04);border-radius:14px;border:1px solid rgba(176,50,255,.15)">
-    <div style="font-size:28px;font-weight:700;background:linear-gradient(135deg,#b032ff,#ff39ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:5px">4×</div>
+    <div style="font-size:28px;font-weight:700;background:linear-gradient(135deg,#7a00cc,#9d00ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:5px">4×</div>
     <div style="font-size:13px;font-weight:600;color:#fff;margin-bottom:6px">Conversion Rate</div>
     <div style="font-size:12px;color:rgba(255,255,255,.5);line-height:1.5">Higher conversion on behaviour-triggered personalised communications vs batch campaign sends</div>
   </div>
   <div style="text-align:center;padding:24px;background:rgba(255,255,255,.04);border-radius:14px;border:1px solid rgba(176,50,255,.15)">
-    <div style="font-size:28px;font-weight:700;background:linear-gradient(135deg,#b032ff,#ff39ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:5px">28%</div>
+    <div style="font-size:28px;font-weight:700;background:linear-gradient(135deg,#7a00cc,#9d00ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:5px">28%</div>
     <div style="font-size:13px;font-weight:600;color:#fff;margin-bottom:6px">Churn Reduction</div>
     <div style="font-size:12px;color:rgba(255,255,255,.5);line-height:1.5">Reduction in preventable churn when CS is measured continuously and intervention happens before lapse</div>
   </div>
   <div style="text-align:center;padding:24px;background:rgba(255,255,255,.04);border-radius:14px;border:1px solid rgba(176,50,255,.15)">
-    <div style="font-size:28px;font-weight:700;background:linear-gradient(135deg,#b032ff,#ff39ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:5px">+18pts</div>
+    <div style="font-size:28px;font-weight:700;background:linear-gradient(135deg,#7a00cc,#9d00ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:5px">+18pts</div>
     <div style="font-size:13px;font-weight:600;color:#fff;margin-bottom:6px">NPS Improvement</div>
     <div style="font-size:12px;color:rgba(255,255,255,.5);line-height:1.5">Net Promoter Score improvement when CX is coherent, personalised, and relevant across every channel</div>
   </div>
@@ -840,7 +840,7 @@ footer{background:var(--dk);padding:40px 0 18px;border-top:1px solid rgba(157,0,
 
 
 <!-- ══ CTA ════════════════════════════════════════════════════════════════ -->
-<div style="background:linear-gradient(135deg,#b032ff 0%,#ff39ff 100%);padding:64px 0;text-align:center">
+<div style="background:linear-gradient(135deg,#7a00cc 0%,#9d00ff 100%);padding:64px 0;text-align:center">
 <div class="bx">
 <div style="font-size:11px;font-weight:700;color:rgba(255,255,255,.7);letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px">07 · Get Started</div>
 <h2 style="font-size:28px;font-weight:700;color:#fff;margin-bottom:12px">Deliver Experiences That Grow Your Customers — Not Just Your Campaigns.</h2>
